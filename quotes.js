@@ -1,6 +1,4 @@
-localQuotes
-
-const localQuotes = [
+[
     {
         text:"Innovation is taking two things that exist and putting them together in a new way.",
         author:"Tom Freston"
