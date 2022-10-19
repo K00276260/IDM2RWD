@@ -78,6 +78,6 @@
     {
         text:"If I have a thousand ideas and only one turns out to be good, I am satisfied.",
         author:"Alfred Nobel"
-    },
+    }
 
 ]
