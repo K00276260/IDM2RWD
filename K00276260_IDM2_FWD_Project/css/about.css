@@ -1,0 +1,55 @@
+/*---------------------------------------------------------------mobile*/
+
+#about{
+    margin:0px 20px 10px 20px;
+}
+#about h2{
+    font-size: 2em;
+}
+#about p{
+    font-size:1.1em;
+}
+
+#map{
+    max-height: 80%;
+    max-width: 90%;
+    margin: 0px 10px 20px 20px ;
+}
+
+@media screen and (min-width: 869px) {/*------------------------------------------------------------------------------------desktop*/
+    #about{
+    margin:0px 40px 10px 40px;
+}
+#about h2{
+    font-size: 2.2em;
+}
+#about p{
+    font-size:1.3em;
+}
+
+#map{
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto ;
+}
+}
+
+
+@media screen and (max-width:868px) and (min-width: 481px) {/*---------------------------------------------------------------tablet*/
+    
+    #about{
+    margin:0px 20px 10px 20px;
+}
+#about h2{
+    font-size: 2.2em;
+}
+#about p{
+    font-size:1.3em;
+}
+
+#map{
+    max-height: 80%;
+    max-width: 90%;
+    margin: auto ;
+}
+}

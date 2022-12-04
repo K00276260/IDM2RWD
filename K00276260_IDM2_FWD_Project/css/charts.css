@@ -1,0 +1,188 @@
+/*---------------------------------------------------------------mobile*/
+/*-------------------------------------------------everything in charts-mobile*/
+.charts{
+    width: 90%;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    display:grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "t c c c c c c c l l l l"
+        "t c c c c c c c l l l l"
+        "t c c c c c c c l l l l"; 
+}
+
+.topNumber .fa-hashtag{
+    font-size: 0.8em;
+    text-align: center;
+    color:#9ECE9A; 
+}
+
+.topNumber{
+    grid-area:t;
+    font-size: 2em;
+    font-weight: bold;
+    margin:auto;
+    text-align: center;
+}
+
+.charts h3{
+    grid-area:c;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+.charts h4{
+    grid-area:c;
+    font-size: 0.9em;
+    margin-top: 70px;
+    margin-left: 20px; 
+}
+
+.charts p{
+    font-size: 0.7em;
+    margin-left: 3px; 
+}
+
+.listen{
+    grid-area:l;
+}
+
+.listen button{
+    cursor: pointer;
+    font-size: 0.9rem;
+    height: 2.1rem;
+    width: 6rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    color:white;
+    background-color: #225560;
+    margin-top: 5px;
+        
+}
+
+#spotifyBtn:hover{
+    background-color: #81b71a;
+}
+
+#youtubeBtn:hover{
+    background-color: #FF0000;
+}
+
+.listen .fa-spotify{
+    color:white;
+    padding-right: 5px;
+}
+
+.listen .fa-youtube{
+    color:white;
+    padding-right: 5px;
+}
+
+
+@media screen and (min-width: 869px) {/*------------------------------------------------------------------------------------desktop*/
+    .charts{
+    padding: 10px;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.topNumber .fa-hashtag{
+    font-size: 0.7em;       
+}
+    
+.topNumber{
+    font-size: 3em;
+    font-weight: bold;
+    margin:auto;
+}
+
+.charts h3{
+    font-size: 1.6em;
+    margin-left: 20px;
+}
+    
+.charts h4{
+    margin-top: 60px;
+    margin-left: 20px;  
+}
+
+.charts p{
+    font-size: 1.1em;
+    margin-left: 3px;   
+}
+
+.listen button{
+    font-size: 1.1rem;
+    height: 2.1rem;
+    width: 9rem;
+}
+
+.listen .fa-spotify{
+    padding-right: 5px;
+}
+    
+.listen .fa-youtube{
+    padding-right: 5px;
+}
+}
+
+@media screen and (max-width:868px) and (min-width: 481px) {/*---------------------------------------------------------------tablet*/
+    .charts{
+    padding: 10px;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.topNumber .fa-hashtag{
+    font-size: 0.6em;        
+}
+    
+.topNumber{
+    font-size: 2em;
+    font-weight: bold;
+    margin:auto;
+}
+
+.charts h3{
+    font-size: 1.6em;
+    margin-left: 10px;
+}
+    
+.charts h4{
+    margin-top: 60px;
+    margin-left: 10px;  
+}
+
+.charts p{
+    font-size: 1.1em;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+
+.listen button{
+    font-size: 1.1rem;
+    height: 2.1rem;
+    width: 9rem;
+    margin-top: 5px;
+}
+
+.listen .fa-spotify{
+    padding-right: 5px;
+}
+.listen .fa-youtube{
+    padding-right: 5px;
+}
+}

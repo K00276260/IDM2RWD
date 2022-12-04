@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Sharp - Charts - Top Everywhere</title>
+    <link rel="icon" type="image/png" href="../images/logo.png"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/charts.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+</head>
+    <body>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+        <header class="header" id="myHeader">
+                <i class="fa-solid fa-gear"></i>
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <a href="index.html"><img src="../images/logo.jpg" class="logo" alt="logo"></a>
+            <div class="topnav" id="myTopnav">
+                <div id="myLinks">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="news.html">News</a>
+                    <div class="dropdown" id="concertsDropdown">
+                        <button class="dropbtn" id="dropbtnConcerts">Concerts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="concertsDropdown-content">
+                                <a href="upcomingConcerts.html">Upcoming Concerts</a>
+                                <a href="fastestSelling.html">Fastest Selling</a>
+                                <a href="forMe.html">For Me</a>
+                            </div>
+                    </div>
+                    <div class="dropdown" id="chartsDropdown">
+                        <button class="dropbtn" id="dropbtnCharts">Charts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="chartsDropdown-content">
+                                <a href="ireTop.html">Ireland's Top 100</a>
+                                <a href="topEverywhere.html">Top 100 Everywhere</a>
+                                <a href="releases.html">New Releases</a>
+                            </div>
+                    </div>
+                    <div class="dropdown" id="forumDropdown">
+                        <button class="dropbtn" id="dropbtnForum">Forum
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="forumDropdown-content">
+                                <a href="hotTopics.html">Hot Topics</a>
+                                <a href="upload.html">Upload</a>
+                            </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> <!--burger icon in html-->
+            </div>
+            </header>
+        <h2 id="trending">Trending</h2>
+        <section id="carousel">
+            <img src="../images/left-arrow.png" alt="Left Carousel Arrow" class="arrow" id="left-arrow">
+            <img src="../images/right-arrow.png" alt="Right Carousel Arrow" class="arrow" id="right-arrow">
+             <div class="slide-image" id="slide1">
+                <a href ="JohnLewisArticle.html">Read more about <br>the Blink-182 cover which soundtracks <br>the new John Lewis Christmas advert</a>
+            </div>
+            <div class="slide-image" id="slide2">
+                 <a href ="taylorArticle.html">Read more about <br>Taylor Swift sharing anger at Ticketmaster <br>after fans struggle to get tickets for her tour</a>
+            </div>
+            <div class="slide-image" id="slide3">
+                 <a href ="robbieWilliamsArticle.html">Read more about<br>Robbie Williams defending performing <br>in Qatar for the World Cup</a>
+            </div>
+        </section>
+        <div class="advert">
+           <a href="https://www.spotify.com/ie/premium/?utm_source=ie-en_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_emea_ie_premiumbusiness_premium_brand+contextual+text+exact+ie-en+google&gclid=EAIaIQobChMIq5_qwa67-wIVAZ7tCh2Tjg89EAAYASAAEgJWa_D_BwE&gclsrc=aw.ds"> 
+            <img src="../images/ads/spotify%20premium%20ad%20long.png" alt="spotify premium advert"></a>
+
+        </div>
+
+          <h2 class="heading">TOP 100 EVERYWHERE</h2>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>1</div>
+                <h3>ANTI-HERO</h3>
+                <h4>TAYLOR SWIFT</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/0V3wPSX9ygBnCm8psDIegu?si=4bba73055e7e421e"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                    <a href="https://youtu.be/b1kbLwvqugk"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>2</div>
+                <h3>UNHOLY</h3>
+                <h4>SAM SMITH &amp; KIM PETRAS</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                <a href="https://open.spotify.com/track/3nqQXoyQOWXiESFLlDF1hG?si=b1d700b907d74943"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/Uq9gPaIzbe8"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>3</div>
+                <h3>RICH FLEX</h3>
+                <h4>DRAKE &amp; 21 SAVAGE</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/1bDbXMyjaUIooNwFE9wn0N?si=1e28a2983e3e42e1"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/I4DjHHVHWAE"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                
+                </div>
+        </div>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>4</div>
+                <h3>I'M GOOD (BLUE)</h3>
+                <h4>DAVID GUETTA &amp; BEBE RAXHA</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/4uUG5RXrOk84mYEfFvj3cK?si=db5411a99e184ac8"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/90RLzVUuXe4"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>5</div>
+                <h3>CALM DOWN</h3>
+                <h4>REMA &amp; SELENA GOMEZ</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/0WtM2NBVQNNJLh6scP13H8?si=ff68912602964102"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/CQLsdm1ZYAw"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>6</div>
+                <h3>AS IT WAS</h3>
+                <h4>HARRY STYLES</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/4Dvkj6JhhA12EX05fT7y2e?si=d7828d4b2d5c418d"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/H5v3kku4y6Q"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>7</div>
+                <h3>LIFT ME UP</h3>
+                <h4>RIHANNA</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/6sCvvleqKbeyOkQDieBYgp?si=8774c30282d84dce"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/Mx_OexsUI2M"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>8</div>
+                <h3>UNDER THE INFLUENCE</h3>
+                <h4>CHRIS BROWN</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/5IgjP7X4th6nMNDh4akUHb?si=bc9e32bae9164db0"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/pfxyk1glEq4"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div> 
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>9</div>
+                <h3>LA BACHATA</h3>
+                <h4>MANUEL TURIZO</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/5ww2BF9slyYgNOk37BlC4u?si=37d9207bf8ad4228"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/GL1GLuHK9JQ"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div>
+        <div class="charts">
+            
+            <div class="topNumber"><i class="fa-solid fa-hashtag"></i>10</div>
+                <h3>MADE YOU LOOK</h3>
+                <h4>MEGHAN TRAINOR</h4>
+                <div class="listen">
+                    <p>Listen to this song on</p>
+                    <a href="https://open.spotify.com/track/0QHEIqNKsMoOY5urbzN48u?si=6598cf12823c44d1"><button id="spotifyBtn"><i class="fa-brands fa-spotify"></i>Spotify</button></a>
+                <a href="https://youtu.be/gPCCYMeXin0"><button id="youtubeBtn"><i class="fa-brands fa-youtube"></i>Youtube</button></a>
+                </div>
+        </div>
+        
+        
+      
+         <button class="moreBtn">Load More</button>
+    
+
+        <footer>
+           <div class="follow">
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en-ie">
+                    <i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerInfo1">
+                <p><a href="info.html">About Us</a> &nbsp;|  </p>
+                <p>&nbsp;  <a href="#">Support</a>&nbsp; |  </p>
+                <p>&nbsp;  <a href="#">Advertising</a></p>
+            </div>
+            <div class="footerInfo2">
+                <p><a href="#">Terms of Use</a>&nbsp;|</p>
+                <p>&nbsp; <a href="#">Privacy Policy</a></p>
+            </div>
+                <p id="kno">&copy;2022 K00276260</p>
+        </footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/facts.js"></script>    
+        
+    </body>
+</html>

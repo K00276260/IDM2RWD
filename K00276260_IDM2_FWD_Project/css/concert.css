@@ -1,0 +1,116 @@
+/*---------------------------------------------------------------mobile*/
+
+.concert{
+    width: 90%;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    display:grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "c t t t t t t t t t b b"
+        "c h h h h h h h h h b b"
+        "c h h h h h h h h h b b"; 
+}
+
+.concertDate{
+    grid-area: c;
+    margin-top: 9px;
+    justify-self: center;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.ticketBtn{
+    grid-area: b;
+    cursor: pointer;
+    font-size: .8rem;
+    height: 2rem;
+    width: 7rem;
+    border: none;
+    border-radius: 5px;
+    color: #9ECE9A;
+    background-color: #225560;
+    outline: none;
+    margin:auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.concert h3{
+    grid-area: t;
+    font-size: 1.3em;
+    margin-top: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.concert h4{
+    grid-area: h;
+    font-size: 0.7em;
+}
+
+
+@media screen and (min-width: 869px) {/*------------------------------------------------------------------------------------desktop*/
+    .concertDate{
+    margin-top: 8px;
+    margin-left: 0px;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-right: 10px;
+}
+    
+.ticketBtn{
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 13rem;
+    margin-right: 60px;
+}
+
+.concert h3{
+    font-size: 1.5em;
+    margin-top: 7px;
+    font-weight: 700;
+}
+    
+.concert h4{
+    font-size: 1em;
+    font-weight: normal;
+}
+    
+}
+
+
+@media screen and (max-width:868px) and (min-width: 481px) {/*---------------------------------------------------------------tablet*/
+    .concertDate{
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-right: 10px;
+}
+.ticketBtn{
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 13rem;
+}
+
+.concert h3{
+    font-size: 1.4em;
+    margin-top: 7px;
+    font-weight: 700;
+}
+    
+.concert h4{
+    font-size: 1.1em;
+    font-weight: normal;
+}
+}

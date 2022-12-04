@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Sharp - All Music News Articles You need</title>
+    <link rel="icon" type="image/png" href="../images/logo.png"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/news.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+</head>
+    <body>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+        <header class="header" id="myHeader">
+                <i class="fa-solid fa-gear"></i>
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <a href="index.html"><img src="../images/logo.jpg" class="logo" alt="logo"></a>
+            <div class="topnav" id="myTopnav">
+                <div id="myLinks">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="news.html">News</a>
+                    <div class="dropdown" id="concertsDropdown">
+                        <button class="dropbtn" id="dropbtnConcerts">Concerts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="concertsDropdown-content">
+                                <a href="upcomingConcerts.html">Upcoming Concerts</a>
+                                <a href="fastestSelling.html">Fastest Selling</a>
+                                <a href="forMe.html">For Me</a>
+                            </div>
+                    </div>
+                    <div class="dropdown" id="chartsDropdown">
+                        <button class="dropbtn" id="dropbtnCharts">Charts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="chartsDropdown-content">
+                                <a href="ireTop.html">Ireland's Top 100</a>
+                                <a href="topEverywhere.html">Top 100 Everywhere</a>
+                                <a href="releases.html">New Releases</a>
+                            </div>
+                    </div>
+                    <div class="dropdown" id="forumDropdown">
+                        <button class="dropbtn" id="dropbtnForum">Forum
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="forumDropdown-content">
+                                <a href="hotTopics.html">Hot Topics</a>
+                                <a href="upload.html">Upload</a>
+                            </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> <!--burger icon in html-->
+            </div>
+        </header>
+        <h2 id="trending">Trending</h2>
+        <section id="carousel">
+            <img src="../images/left-arrow.png" alt="Left Carousel Arrow" class="arrow" id="left-arrow">
+            <img src="../images/right-arrow.png" alt="Right Carousel Arrow" class="arrow" id="right-arrow">
+            <div class="slide-image" id="slide1">
+                <a href ="JohnLewisArticle.html">Read more about <br>the Blink-182 cover which soundtracks <br>the new John Lewis Christmas advert</a>
+            </div>
+            <div class="slide-image" id="slide2">
+                 <a href ="taylorArticle.html">Read more about <br>Taylor Swift sharing anger at Ticketmaster <br>after fans struggle to get tickets for her tour</a>
+            </div>
+            <div class="slide-image" id="slide3">
+                 <a href ="robbieWilliamsArticle.html">Read more about<br>Robbie Williams defending performing <br>in Qatar for the World Cup</a>
+            </div>
+        </section>
+        <div class="news">
+            <img src="../images/mariah-carey-singing.jpg" alt="Mariah Carey">
+                <div class="newsTitle">
+                    <h3>Mariah SZN Continues With CBS Concert Special ‘Mariah Carey: Merry Christmas to All’</h3>
+                </div>
+                <div class="newsContent">
+                    <p>CBS will air the two-hour primetime concert special, filmed at Madison Square Garden, on Tuesday, Dec. 20</p>
+                    <p class="read"><b>Read <a href="mariahConcert.html">more</a></b></p>
+                </div> 
+        </div>
+        <div class="news">
+            <img src="../images/PaulMcCartney.jpg" alt="Paul McCartney">
+                <div class="newsTitle">
+                    <h3>Paul McCartney announces career-spanning ‘7″ Singles’ vinyl boxset</h3>
+                </div>
+                <div class="newsContent">
+                    <p>"I hope the songs in this boxset bring back fun memories for you"</p>
+                    <p class="read"><b>Read <a href="paulMccartney.html">more</a></b></p>
+                </div> 
+        </div>
+        <div class="news">
+            <img src="../images/Dolly.jpg" alt="Dolly Parton">
+                <div class="newsTitle">
+                    <h3>Eminem, Dolly Parton, Lionel Richie inducted into the Rock &amp; Roll Hall of Fame</h3>
+                </div>
+                <div class="newsContent">
+                    <p>“I’m a rock star now!” shouted Dolly Parton as she accepted the honor. “This is a very, very, very special night.”</p>
+                    <p class="read"><b>Read <a href="dolly.html">more</a></b></p>
+                </div>
+        </div>
+        <div class="news">
+            <img src="../images/MariahCareyTiara.jpg" alt="Mariah Carey">
+                <div class="newsTitle">
+                    <h3>Mariah Carey’s Got ‘Emotions’ About Season 5 of ‘The Crown’ Featuring Her Hit</h3>
+                </div>
+                <div class="newsContent">
+                    <p>"Of course I had to have my own screening dahhlings!" she captioned her video.</p>
+                    <p class="read"><b>Read <a href="mariahCareyEmotions.html">more</a></b></p>
+                </div> 
+        </div>
+        <div class="news">
+            <img src="../images/Taylor.jpg" alt="Taylor Swift">
+                <div class="newsTitle">
+                    <h3>Taylor Swift Makes History as First Artist With Entire Top 10 on Billboard Hot 100, Led by ‘Anti-Hero’ at No. 1</h3>
+                </div>
+                <div class="newsContent">
+                    <p>Swift passes Drake, who claimed nine of the top 10 in September 2021.</p>
+                    <p class="read"><b>Read <a href="taylorAntiHero.html">more</a></b></p>
+                </div> 
+        </div>
+        <div class="news">
+            <img src="../images/oneD.jpg" alt="One direction on stage">
+                <div class="newsTitle">
+                    <h3>Louis Tomlinson Admits He Was Jealous of Harry Styles’ Success: ‘I’d Be Lying If I Said It Didn’t Bother Me’</h3>
+                </div>
+                <div class="newsContent">
+                    <p>"I look on Harry like a brother, man," he said of his former bandmate. "I have a lot of pride for what he's doing."</p>
+                    <p class="read"><b>Read <a href="louisTomlinson.html">more</a></b></p>
+                </div> 
+        </div>
+        <div class="news">
+            <img src="../images/britney.jpg" alt="Britney Spears">
+                <div class="newsTitle">
+                    <h3>Britney Spears Slams ‘Humiliating’ Documentaries About Her: ‘I’m Not a Robot or Science Experiment’</h3>
+                </div>
+                <div class="newsContent">
+                    <p>"I'm a valued soul ... so for the documentaries that were done on me, they were trash and nothing more than trash ... period," she wrote on Twitter.</p>
+                    <p class="read"><b>Read <a href="britney.html">more</a></b></p>
+                </div> 
+        </div> 
+        <div class="news">
+            <img src="../images/florence.jpg" alt="Florence + The Machine performing">
+                <div class="newsTitle">
+                <h3>Florence + The Machine postpone rest of UK tour due to broken foot: “My heart is aching”</h3>
+                </div>
+                <div class="newsContent">
+                    <p>Florence Welch revealed that she unknowingly played Friday night's show at London's The O2 with the fracture</p>
+                    <p class="read"><b>Read <a href="florence.html">more</a></b></p>
+                </div> 
+        </div>
+        <div class="news">
+            <img src="../images/Taylor-Swift-NSAI-Awards-2022.jpg" alt="Taylor Swift performing">
+                <div class="newsTitle">
+                <h3>US Justice Department opens investigation over Live Nation and Ticketmaster concerns</h3>
+                </div>
+                <div class="newsContent">
+                    <p>The investigation comes as the ticketing site faces scrutiny over Taylor Swift 'The Eras Tour' sales</p>
+                    <p class="read"><b>Read <a href="ticketmasterArticle.html">more</a></b></p>
+                </div> 
+        </div>
+        <button class="moreBtn">Load More</button>
+        <footer>
+           <div class="follow">
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en-ie">
+                    <i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerInfo1">
+                <p><a href="info.html">About Us</a> &nbsp;|  </p>
+                <p>&nbsp;  <a href="#">Support</a>&nbsp; |  </p>
+                <p>&nbsp;  <a href="#">Advertising</a></p>
+            </div>
+            <div class="footerInfo2">
+                <p><a href="#">Terms of Use</a>&nbsp;|</p>
+                <p>&nbsp; <a href="#">Privacy Policy</a></p>
+            </div>
+                <p id="kno">&copy;2022 K00276260</p>
+        </footer>
+
+<script src="../js/main.js">
+    
+       
+            
+</script>
+            
+    </body>
+</html>
