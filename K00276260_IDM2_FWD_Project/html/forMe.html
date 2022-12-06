@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Sharp - Log in to your account!</title>
+    <link rel="icon" type="image/png" href="../images/logo.png"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/loginSignup.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <header class="header" id="myHeader">
+                <i class="fa-solid fa-gear"></i>
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <a href="index.html"><img src="../images/logo.jpg" class="logo" alt="logo"></a>
+            <div class="topnav" id="myTopnav">
+                <div id="myLinks">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="news.html">News</a>
+                    <div class="dropdown" id="concertsDropdown">
+                        <button class="dropbtn" id="dropbtnConcerts">Concerts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="concertsDropdown-content">
+                                <a href="upcomingConcerts.html">Upcoming Concerts</a>
+                                <a href="fastestSelling.html">Fastest Selling</a>
+                                <a href="forMe.html">For Me</a>
+                            </div>
+                    </div>
+                    <div class="dropdown" id="chartsDropdown">
+                        <button class="dropbtn" id="dropbtnCharts">Charts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="chartsDropdown-content">
+                                <a href="ireTop.html">Ireland's Top 100</a>
+                                <a href="topEverywhere.html">Top 100 Everywhere</a>
+                                <a href="releases.html">New Releases</a>
+                            </div>
+                    </div>
+                    <div class="dropdown" id="forumDropdown">
+                        <button class="dropbtn" id="dropbtnForum">Forum
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="forumDropdown-content">
+                                <a href="hotTopics.html">Hot Topics</a>
+                                <a href="upload.html">Upload</a>
+                            </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> <!--burger icon in html-->
+            </div>
+            </header>
+        <div class="loginInstruction">
+        <h3>You can get a list of recommended concerts based on your favourites list if you have your own profile!</h3>
+        <p>Please Log in or Sign in below</p>
+            </div>
+                <div class="login">
+                
+                <div class="title">Login Form</div>
+                <div class="social_icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+                    <a href="https://www.google.com/intl/en-GB/gmail/about/"><i class="fa-brands fa-google"></i><span>Google</span></a>
+                </div>
+                <form action="#" method="get" name="login_form" class="loginForm" id="loginForm">
+                    <div class="input_box">
+                        <label for="email">Email Address:</label>
+                        <input type="text" id="email" name="email" placeholder="Email">
+                       
+                    </div>
+                    <div class="input_box">
+                        <label for="password">
+				        <span>Password</span></label>
+				        <div class="passwd-wrap">
+					       <input
+						      type="password"
+						      id="password"
+                                  name="password"
+						      placeholder="Enter your password" />
+
+					       <button type="button" id="show-passwd">
+						      <img src="../images/eye_open.svg" alt="Show Password" />
+					       </button>
+                         </div>
+			             
+                    </div>
+                    
+                    <br>
+                    <div class="option_div">
+                    <div class="check_box">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </div>
+                    <div class="forget_div">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    </div>
+                    <div class="input_box button">
+                        <input type="submit" id="submit" name="submit" value="Login" onclick="window.open('forMeLoggedIn.html')">
+                    </div>
+                    <div class="sign_up">
+                        Don't have an account? <a href="signup.html">Sign up now</a>
+                    </div>
+                </form>
+                
+                </div>
+        <footer>
+            <div class="follow">
+                 <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/">
+                 <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en-ie">
+                 <i class="fa-brands fa-twitter"></i></a>
+             </div>
+            <div class="footerInfo1">
+             <p><a href="info.html">About Us</a> &nbsp;|  </p>
+             
+             <p>&nbsp;  Support&nbsp; |  </p>
+             
+             <p>&nbsp;  Advertising</p>
+             </div>
+             <div class="footerInfo2">
+             <p>Terms of Use&nbsp;|</p>
+             
+             <p>&nbsp; Privacy Policy</p>
+                 </div>
+             <p id="kno">&copy;2022 K00276260</p>
+        </footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/password.js"></script> 
+
+    </body>
+</html>

@@ -1,0 +1,108 @@
+/*---------------------------------------------------------------mobile*/
+.news{
+    width: 90%;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    grid-gap: 3px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "i i i i i"
+        "t t t t t"
+        "p p p p p"; 
+}
+
+.news img{
+    display: block;
+    margin: 0px auto 0px auto;
+    width: 80%;
+    grid-area:i;
+}
+
+.newsTitle h3{
+    font-size:1.2em;
+    grid-area:t;
+}
+
+.newsContent p{
+    font-size:0.9em;
+    grid-area: p;
+}
+
+
+
+@media screen and (min-width: 869px) {/*------------------------------------------------------------------------------------desktop*/
+    
+    .news{
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: 
+        "i t t t t"
+        "i t t t t"
+        "i p p p p"; 
+}
+
+.news img{
+    display: block;
+    float:left;
+    padding-right:20px;
+    max-width: 40%;
+    grid-area:i;
+    margin:30px auto 30px 20px;
+    /*margin-top: 5px;
+    padding-bottom: 5px;*/
+    
+}
+
+.newsTitle h3{
+    font-size:1.8em;
+    grid-area:t;
+}
+
+.newsContent p{
+    font-size:1.4em;
+    grid-area: p;
+}
+    
+}
+
+
+@media screen and (max-width:868px) and (min-width: 481px) {/*---------------------------------------------------------------tablet*/
+    
+    .news{
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: 
+        "i t t t t"
+        "i t t t t"
+        "i p p p p"; 
+}
+
+.news img{
+    display: block;
+    float:left;
+    padding-right:20px;
+    max-width: 50%;
+    grid-area:i;
+    margin-top:auto;
+    margin-bottom: auto;  
+}
+    
+.news .read {
+    margin-left:310px
+}
+
+.newsTitle h3{
+    font-size:1.2em;
+    grid-area:t;
+}
+
+.newsContent p{
+    font-size:.8em;
+    grid-area: p;
+}
+}

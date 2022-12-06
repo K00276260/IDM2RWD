@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Sharp - Fastest Selling</title>
+    <link rel="icon" type="image/png" href="../images/logo.png"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/concert.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+</head>
+    <body>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+        <header class="header" id="myHeader">
+                <i class="fa-solid fa-gear"></i>
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <a href="index.html"><img src="../images/logo.jpg" class="logo" alt="logo"></a>
+            <div class="topnav" id="myTopnav">
+                <div id="myLinks">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="news.html">News</a>
+                    <div class="dropdown" id="concertsDropdown">
+                        <button class="dropbtn" id="dropbtnConcerts">Concerts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="concertsDropdown-content">
+                                <a href="upcomingConcerts.html">Upcoming Concerts</a>
+                                <a href="fastestSelling.html">Fastest Selling</a>
+                                <a href="forMe.html">For Me</a>
+                            </div>
+                    </div>
+                    <div class="dropdown" id="chartsDropdown">
+                        <button class="dropbtn" id="dropbtnCharts">Charts
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="chartsDropdown-content">
+                                <a href="ireTop.html">Ireland's Top 100</a>
+                                <a href="topEverywhere.html">Top 100 Everywhere</a>
+                                <a href="releases.html">New Releases</a>
+                            </div>
+                    </div>
+                    <div class="dropdown" id="forumDropdown">
+                        <button class="dropbtn" id="dropbtnForum">Forum
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="forumDropdown-content">
+                                <a href="hotTopics.html">Hot Topics</a>
+                                <a href="upload.html">Upload</a>
+                            </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> <!--burger icon in html-->
+            </div>
+            </header>
+        <h2 id="trending">Trending</h2>
+        <section id="carousel">
+            <img src="../images/left-arrow.png" alt="Left Carousel Arrow" class="arrow" id="left-arrow">
+            <img src="../images/right-arrow.png" alt="Right Carousel Arrow" class="arrow" id="right-arrow">
+             <div class="slide-image" id="slide1">
+                <a href ="JohnLewisArticle.html">Read more about <br>the Blink-182 cover which soundtracks <br>the new John Lewis Christmas advert</a>
+            </div>
+            <div class="slide-image" id="slide2">
+                 <a href ="taylorArticle.html">Read more about <br>Taylor Swift sharing anger at Ticketmaster <br>after fans struggle to get tickets for her tour</a>
+            </div>
+            <div class="slide-image" id="slide3">
+                 <a href ="robbieWilliamsArticle.html">Read more about<br>Robbie Williams defending performing <br>in Qatar for the World Cup</a>
+            </div>
+        </section>
+       <br><br><br><br><br><br>
+         
+        
+          <h2 class="heading">JUST FOR YOU</h2>
+        <p class="heading">Based on your liked content</p>
+        
+        <div class="concert">
+                <div class="concertDate">NOV <br> 29 <br> Tue <br> 19:00</div>
+               <h3>James Bay</h3>
+            <h4>Dublin D2, 3Olympia Theater</h4>
+            <button class="ticketBtn">Find Tickets!</button>
+        </div>
+    
+        <div class="concert">
+               <div class="concertDate">DEC <br> 03 <br> Sat <br> 20:30</div>
+               <h3>Gavin James</h3>
+            <h4>Co. Kerry KY, Gleneagle INEC Arena</h4>
+            <button class="ticketBtn">Find Tickets!</button>
+        </div> 
+        <div class="concert">
+              <div class="concertDate">DEC <br> 04 <br> Sun <br> 19:00</div>
+               <h3>The Coronas</h3>
+            <h4>Belfast, Ulster Hall Belfast</h4>
+            <button class="ticketBtn">Find Tickets!</button>
+        </div>
+      
+        <br><br><br><br><br><br><br><br>
+        
+        
+
+        <footer>
+           <div class="follow">
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en-ie">
+                    <i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerInfo1">
+                <p><a href="info.html">About Us</a> &nbsp;|  </p>
+                <p>&nbsp;  <a href="#">Support</a>&nbsp; |  </p>
+                <p>&nbsp;  <a href="#">Advertising</a></p>
+            </div>
+            <div class="footerInfo2">
+                <p><a href="#">Terms of Use</a>&nbsp;|</p>
+                <p>&nbsp; <a href="#">Privacy Policy</a></p>
+            </div>
+                <p id="kno">&copy;2022 K00276260</p>
+        </footer>
+
+<script src="../js/main.js"></script>
+   
+        
+    </body>
+</html>
